@@ -1,0 +1,80 @@
+# === IDEA ===
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.idea_modules/
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/assetWizardSettings.xml
+.idea/dbnavigator.xml
+.idea/compiler.xml
+.idea/libraries/
+.idea/modules.xml
+.idea/vcs.xml
+
+# === VS Code ===
+.vscode/
+.settings/
+.classpath
+.project
+
+# === Maven ===
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# === Java ===
+*.class
+*.log
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+hs_err_pid*
+replay_pid*
+
+# === OS ===
+.DS_Store
+Thumbs.db
+*.swp
+*.lock
+*.tmp
+
+# === Application ===
+application-local.yml
+application-dev.yml
+application-prod.yml
+*.db
+*.h2.db
+*.lock.db
+logs/
+logs/
+temp/
+
+# === Secrets ===
+*.p12
+*.jks
+*.key
+*.pem
+*.keystore
+*.truststore
+
+# === Gradle (если используете) ===
+.gradle/
+build/
+gradle-wrapper.jar
+gradlew
+gradlew.bat
