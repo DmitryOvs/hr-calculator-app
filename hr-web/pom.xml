@@ -16,51 +16,43 @@
 
     <dependencies>
         <!-- Внутренние модули -->
+        <!-- Подключаем логику расчетов -->
+        <dependency>
+            <groupId>com.salary</groupId>
+            <artifactId>hr-service</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <!-- Подключаем базу данных -->
+        <dependency>
+            <groupId>com.salary</groupId>
+            <artifactId>hr-persistence</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <!-- Подключаем общие DTO -->
+        <dependency>
+            <groupId>com.salary</groupId>
+            <artifactId>hr-common</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
         <dependency>
             <groupId>com.salary</groupId>
             <artifactId>hr-batch</artifactId>
+            <version>${project.version}</version>
         </dependency>
 
-        <!-- Spring Boot Starter - ОБЯЗАТЕЛЬНО! -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-        </dependency>
-
-        <!-- Spring Boot Starter Web -->
+        <!-- Веб-стартер Spring Boot -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- Spring Boot Starter Data JPA (для транзакций) -->
+        <!-- Драйвер PostgreSQL -->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
-
-        <!-- Валидация -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-validation</artifactId>
-        </dependency>
-
-        <!-- Actuator -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-
-        <!-- OpenAPI -->
-        <dependency>
-            <groupId>org.springdoc</groupId>
-            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
-        </dependency>
-
-        <!-- H2 для тестов (или PostgreSQL) -->
-        <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
             <scope>runtime</scope>
         </dependency>
     </dependencies>

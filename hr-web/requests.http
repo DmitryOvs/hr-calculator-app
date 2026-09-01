@@ -1,0 +1,18 @@
+### Проверка расчета за МАРТ 2026 (Овсяников Д.Е.)
+POST http://localhost:8080/api/v1/salary/calculate
+Content-Type: application/json
+
+{
+  "tabNumber": 55,
+  "period": "2026-03",
+  "totalWorkHours": 176.0,
+  "holidayWorkHours": 33.0,
+  "restIntervaxHours": 56.0,
+  "nightShiftsCount": 0,
+  "travelDaysCount": 1,
+  "hasTravelCompensation": true
+}
+
+
+
+

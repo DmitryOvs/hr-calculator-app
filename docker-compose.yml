@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  postgres-db:
+    image: postgres:15.15
+    container_name: hr-calculator-db
+    environment:
+      POSTGRES_DB: hr_db          # Имя базы данных
+      POSTGRES_USER: postgres     # Логин администратора
+      POSTGRES_PASSWORD: root     # Пароль администратора
+    ports:
+      - "5432:5432"               # Пробрасываем порт из контейнера на ваш ПК
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    restart: always
+
+volumes:
+  pgdata:                         # Папка, чтобы данные не стирались при остановке контейнера

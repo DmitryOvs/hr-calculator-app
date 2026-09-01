@@ -22,7 +22,14 @@
             <artifactId>hr-common</artifactId>
         </dependency>
 
-        <!-- Spring Data JPA + Hibernate -->
+        <!-- Lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- Spring Data JPA + Hibernate (уже включает все нужное) -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -47,10 +54,10 @@
             <artifactId>flyway-core</artifactId>
         </dependency>
 
-        <!-- Для работы с UUID в Hibernate -->
+        <!-- Для H2 с PostgreSQL режимом -->
         <dependency>
-            <groupId>org.hibernate.orm</groupId>
-            <artifactId>hibernate-core</artifactId>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-database-postgresql</artifactId>
         </dependency>
     </dependencies>
 </project>
